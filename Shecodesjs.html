@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>JS array and loops</title>
+</head>
+<body>
+  hello world
+  <script>
+    //array of week days
+    let days = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"];
+
+    console.log(days);
+
+    //log monday and Sunday
+    days[0];
+    days[6];
+    console.log(days[0], days[6]);
+
+    //change sunday to funday
+    days[6] = "Funday"
+    console.log(days);
+
+    //remove monday and Tuesday
+let day = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"];
+
+    day.shift();
+    day.shift();
+    console.log(day);
+
+    //log everyday with words
+    function showDay(week) {
+      console.log(`Temperature on ${week} is 18 degrees`)
+    }
+    let weekDays = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"];
+    weekDays.forEach(showDay);
+  </script>
+</body>
+</html>
